@@ -4,12 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Hello, Class!");
-            Console.WriteLine("Hello, World1!");
-            Console.WriteLine("I am taird");
-            Console.WriteLine("//////////////// test the branches ////////////");
-            Console.WriteLine("secund pull to the vs");
+
+            reverceA();
+
+        }
+
+        static void reverceA()
+        {
+            int[] arr = [1, 2, 3, 4, 5];
+            int[] arr2 = new int[arr.Length];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr2[i] = arr[arr.Length - 1 ];
+            }
+            foreach (int i in arr2)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
